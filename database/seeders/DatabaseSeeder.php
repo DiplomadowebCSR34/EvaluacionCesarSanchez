@@ -40,5 +40,13 @@ class DatabaseSeeder extends Seeder
         'password' => Hash::make('12345678'),
         'role_id' => 1 // super_admin
     ]);
+
+    User::create([
+    'name' => 'michel.ramoz',
+    'email' => 'michel.ramoz@prueba.com',
+    'password' => Hash::make('12345678'),
+    'role_id' => 3 // usuario
+]);
+
 }
 }
